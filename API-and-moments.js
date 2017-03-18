@@ -22,9 +22,10 @@ var millisecInDay = 86400000; //(60*60*6)*4); will call moment function with min
 //========================================events=============================================  
   
 $("#submit").on("click", function() {
-      
+    
+    $("#train-list").empty();  
 	event.preventDefault();
-	$("#train-list").empty();
+	
 
 	//Gets values from user input, using moment here will store NaN
 	trainName = $("#train-name").val().trim();
@@ -68,7 +69,6 @@ $("#submit").on("click", function() {
   		" </td></tr>");
   		
   	});
-
 	
 });
 
