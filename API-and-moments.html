@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Train Schedule hmwk7</title>
+
+    <!-- Bootstrap CDN -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Anytime is Train Time</h1>
+	<h5>Choo Choo. Chee Chee</h>
+		<div class="col-2">
+			<div class="top-bg"></div>
+		</div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><h3 class="panel-title">Current Train Times</h3></div>
+  <!-- Table -->
+  <table id="train-list" class="table">
+  	<tr>
+		<th>Train Name</th>
+		<th>Destination</th>
+		<th>Frequency (min)</th>
+		<th>Next Arrival</th>
+		<th>Minutes Away</th>
+	</tr>
+  </table>
+  </div>
+	<div class="panel panel-primary">
+		<div class="panel-heading"><h3 class="panel-title">Add Train</h3></div>
+  		<div class="panel-body">
+			<form>
+				<p>Train Name</p>
+				<input type="text" id="train-name" placeholder="Which train?">
+				<p>Destination</p>
+				<input type="text" id="destination" placeholder="Where to?">
+				<p>First Train Time</p>
+				<input type="text" id="first-train-time" placeholder="HH:mm">
+				<p>Train's Frequency (min)</p>
+				<input type="text" id="Hz" placeholder="Arrives every 'x' minutes"><br>
+				<button type="submit" id="submit">Submit</button>
+			</form>
+		</div>
+
+  <!-- firebase link -->
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <!-- Link to Moment.js -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Bootstrap JavaScript CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- my js -->
+  <script src="API-and-moments.js" type="text/javascript"></script>
+</body>
+</html>
+
+<!-- <div class="panel panel-default">
+  		<div class="panel-heading">
+   		 <h3 class="panel-title panel-primary"></h3>
+  		</div>
+  	<div class="panel-body">
+    	<table id="train-list">
+			<tr>
+				<th>Train Name</th>
+		<th>Destination</th>
+		<th>Frequency (min)</th>
+		<th>Next Arrival</th>
+		<th>Minutes Away</th>
+			</tr>
+		</table>
+  	</div>
+</div> -->
